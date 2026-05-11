@@ -4,3 +4,7 @@ This repository contains:
 - Python data engineering exercises
 - ETL mini projects
 - Notes and experiments
+
+
+## Day 1 progress
+- Env setup completed
