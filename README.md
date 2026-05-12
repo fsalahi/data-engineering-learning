@@ -8,3 +8,6 @@ This repository contains:
 
 ## Day 1 progress
 - Env setup completed
+
+## Day 2 progress
+- Core sql concepts was reviewd. A few exercises were done.
