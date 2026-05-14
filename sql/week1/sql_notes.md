@@ -47,14 +47,14 @@ Example: Imagine an employees table. You want to see the average salary for each
     FROM table_name;
 
     5.2. When to use it:
-    - categorizing data (high, medium, low)
+    - categorizing data (high, medium, low) -> see example 2 in d4_case_when.sql
     - data transformation (active -> inactive)
     - costum sorting (use CASE within an ORDER BY)
-    - conditional aggregations ()
+    - conditional aggregations () -> see example 1 in d4_case_when.sql
 
 6. WINDOW FUNCTION
 fundamental idea: perform calculation across related rows without collapsing them (unlike GROUP BY)
-So, window -> the sunset of rows that stay visible to the function:
+So, window -> the subset of rows that stay visible to the function:
     ... over (
         PARTITION BY ...
         ORDER BY ... --optional
@@ -69,6 +69,8 @@ usually:
     SUM()
     LAG() --looks at previous row
     LEAD() --looks at next row
+For more insight about ROW_NUMBER, RANK, AND DENSE_RANK go to
+d3_window_function.sql and run the select queries.
 
 
 

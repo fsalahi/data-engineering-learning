@@ -11,3 +11,10 @@ This repository contains:
 
 ## Day 2 progress
 - Core sql concepts was reviewd. A few exercises were done.
+
+## Day 3 progress
+- Window function was studied and a few questions were solved.
+
+## Day 4 progress
+- Dive deeper in window functions with examples (d3_window_function.sql was updated).
+- Reviewed CASE WHEN
