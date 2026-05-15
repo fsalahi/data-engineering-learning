@@ -72,6 +72,9 @@ usually:
 For more insight about ROW_NUMBER, RANK, AND DENSE_RANK go to
 d3_window_function.sql and run the select queries.
 
+In d5_lag_lead.sql file, I made a mistake in example 1 by not partitioning LAG() and lead(). Why this is a very bad mistake? Without PARTITION BY ticker, PostgreSQL treats the entire table as one continuous list sorted only by trade_date. Meaning the window engine looks strictly at the row physically above or below the current one, regardless of what company it belongs to.
+PARTITION BY tells PostgreSQL to: 1- Divide the dataset into isolated mini-tables (one bucket for AAPL, one bucket for GOOG). 2- Run the LAG and LEAD functions strictly inside those independent boundaries. 3- Reset the calculation completely when a new ticker group begins (ensuring the first row of Google safely returns NULL or your chosen default, instead of reading Apple's data).
+
 
 
 

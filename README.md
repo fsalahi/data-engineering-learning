@@ -18,3 +18,7 @@ This repository contains:
 ## Day 4 progress
 - Dive deeper in window functions with examples (d3_window_function.sql was updated).
 - Reviewed CASE WHEN
+
+## Day 5 progress
+- Reviewed LAG & LEAD with examples
+- Made a mistake on this day. Take a look at sql_notes.md!
